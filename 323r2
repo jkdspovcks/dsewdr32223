@@ -1,0 +1,35 @@
+
+local Usrky = "https://raw.githubusercontent.com/jkdspovcks/kyshblox/main/kyshbloxf"
+local Blcklst = "https://raw.github.com"
+
+
+local Key = game:HttpGet(Usrky,true)
+
+  local Assholes = game:HttpGet(Blcklst,true)
+
+        local Pllyr = game.Players.LocalPlayer
+-- By Flexsz
+          if string.find(Key,Pllyr.Name) then 
+
+            local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+            local Window = Library.CreateLib("Premium Version Flexsz Scripts I Made by flexsz#7677 ", "Ocean")
+            local Main = Window:NewTab("Main")
+            local MainSection = Main:NewSection("Premium-Scripts")
+            
+            
+            MainSection:NewButton("Blox-Fruit-Premium", "Option1", function()
+                loadstring(Game:HttpGet("https://raw.githubusercontent.com/Flexzstr/BloxFruit/main/Premium"))()
+            end)
+            
+            MainSection:NewButton("Build-A-Boat-Premium", "Option2", function()
+                loadstring(Game:HttpGet("https://raw.githubusercontent.com/Flexzstr/Premium/main/Build-A-Boat"))()
+            end)
+            
+            local Credit = Window:NewTab("Credit")
+            
+            local CreditSection = Credit:NewSection("By flexsz#7677")
+
+                                                                                        else 
+Pllyr:Kick("Pls Buy Premium")
+                                                                                                                                                           end
